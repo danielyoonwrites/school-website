@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- A temporary test page. It shows that Cloudflare publishes this folder.
+     The real first page replaces it in a later pull request. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Asks search engines not to list this page. Remove this line at launch. -->
+  <meta name="robots" content="noindex">
+  <title>Coming soon</title>
+  <style>
+    /* A plain, temporary look. The real colors and type are chosen later. */
+    body {
+      margin: 0;
+      background: #FAF7F2; /* warm paper */
+      color: #1F1D1A;      /* near-black text */
+      /* The phone's own fonts, so nothing extra downloads */
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    main {
+      padding: 64px 24px;
+      max-width: 36em;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.3;
+      margin: 0 0 16px;
+    }
+    p {
+      margin: 0;
+    }
+    /* Korean: keep each word whole at the end of a line, with a little more line space */
+    :lang(ko) {
+      word-break: keep-all;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Our new website is on its way.</h1>
+    <p lang="ko">새 웹사이트를 준비하고 있습니다.</p>
+  </main>
+</body>
+</html>
