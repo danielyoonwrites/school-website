@@ -1,0 +1,25 @@
+// The settings Cloudflare uses to publish this website.
+//
+// After each merge to main, Cloudflare publishes the files in site/ by itself (Workers Builds).
+// At each publish these settings replace the ones in Cloudflare's dashboard, so change them
+// here, not there. Never put a password or a key in this file.
+{
+  // Must match the Worker's name in Cloudflare, or the publish stops
+  "name": "school-website",
+
+  // The date this was set up (October 31, 2026). Keep it: a later date can change how
+  // Cloudflare runs things.
+  "compatibility_date": "2026-10-31",
+
+  // The folder Cloudflare publishes. Every file in it becomes part of the website.
+  "assets": {
+    "directory": "./site"
+  },
+
+  // The test address (school-website.<account name>.workers.dev) until the web address
+  // is added. Turn it off at launch: the address shows the Cloudflare account's name.
+  "workers_dev": true,
+
+  // A preview link for each pull request, to check changes on a phone before merging
+  "preview_urls": true
+}
